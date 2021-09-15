@@ -1,11 +1,11 @@
 [Unit]
-Description=Add two VIPs for containers
-After=network.target
+Description=add two IPs
+After=remote-fs.target
 
 [Service]
 Type=oneshot
-ExecStart="ifconfig wlan0:1 192.168.50.242"
-ExecStart="ifconfig wlan0:2 192.168.50.243"
+ExecStart=ifconfig wlan0:1 192.168.50.242
+ExecStart=ifconfig wlan0:2 192.168.50.243
 
 [Install]
 WantedBy=multi-user.target
