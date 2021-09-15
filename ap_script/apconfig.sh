@@ -75,7 +75,7 @@ set -- "${POSITIONAL[@]}"
 
 AP_IP=${ARG_AP_IP:-'192.168.10.1'}
 AP_IP_BEGIN=`echo "${AP_IP}" | sed -e 's/\.[0-9]\{1,3\}$//g'`
-MAC_ADDRESS="$(cat /sys/class/net/wlan1/address)"
+MAC_ADDRESS="$(cat /sys/class/net/wlan0/address)"
 
 # Install dependencies
 sudo apt -y update
@@ -105,7 +105,6 @@ sudo bash -c 'cat > /etc/hostapd/hostapd.conf' << EOF
 ctrl_interface=/var/run/hostapd
 ctrl_interface_group=0
 interface=ap0
-driver=rtl8192cu
 ssid=${AP_SSID}
 hw_mode=g
 channel=11
@@ -144,7 +143,7 @@ source-directory /etc/network/interfaces.d
 auto lo
 auto ap0
 auto wlan0
-auto wlan1
+
 iface lo inet loopback
 
 allow-hotplug ap0
@@ -154,11 +153,6 @@ iface ap0 inet static
     hostapd /etc/hostapd/hostapd.conf
 
 allow-hotplug wlan0
-iface wlan0 inet manual
-    wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
-
-
-allow-hotplug wlan1
 iface wlan1 inet manual
     wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
 iface AP1 inet dhcp
@@ -168,10 +162,10 @@ EOF
 sudo bash -c 'cat > /bin/rpi-wifi.sh' << EOF
 echo 'Starting Wifi AP and client...'
 sleep 30
-sudo ifdown --force wlan1
+sudo ifdown --force wlan0
 sudo ifdown --force ap0
 sudo ifup ap0
-sudo ifup wlan1
+sudo ifup wlan0
 $([ "${NO_INTERNET-}" != "true" ] && echo "sudo sysctl -w net.ipv4.ip_forward=1")
 $([ "${NO_INTERNET-}" != "true" ] && echo "sudo iptables -t nat -A POSTROUTING -s ${AP_IP_BEGIN}.0/24 ! -d ${AP_IP_BEGIN}.0/24 -j MASQUERADE")
 $([ "${NO_INTERNET-}" != "true" ] && echo "sudo systemctl restart dnsmasq")
@@ -194,6 +188,9 @@ WantedBy=multi-user.target
 EOF
 sudo systemctl daemon-reload
 sudo systemctl enable rpi-wifi.service
+#might not need the following due to the interfaces file
+#sudo systemctl unmask hostapd.service
+#sudo systemctl enable hostapd.service
 #crontab -l | { cat; echo "@reboot /bin/rpi-wifi.sh"; } | crontab -
 
 # Finish
