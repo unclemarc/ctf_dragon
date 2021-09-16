@@ -180,7 +180,7 @@ Requires=network.target
 After=network.target
 
 [Service]
-ExecStart=/bin/bash -c 'rpi-wifi.sh'
+ExecStart=/bin/bash -c '/bin/rpi-wifi.sh'
 User=root
 
 [Install]
