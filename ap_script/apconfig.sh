@@ -107,7 +107,7 @@ ctrl_interface_group=0
 interface=ap0
 ssid=${AP_SSID}
 hw_mode=g
-channel=11
+channel=7
 wmm_enabled=0
 macaddr_acl=0
 auth_algs=1
@@ -141,14 +141,8 @@ sudo bash -c 'cat > /etc/network/interfaces' << EOF
 source-directory /etc/network/interfaces.d
 
 auto lo
-auto eth0
 auto ap0
 auto wlan0
-
-iface eth0 inet static
-    address 192.168.50.10
-    netmask 255.255.255.0
-    gateway 192.168.50.1
 
 iface lo inet loopback
 
@@ -195,8 +189,8 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl enable rpi-wifi.service
 #might not need the following due to the interfaces file
-#sudo systemctl unmask hostapd.service
-#sudo systemctl enable hostapd.service
+sudo systemctl unmask hostapd.service
+sudo systemctl enable hostapd.service
 #crontab -l | { cat; echo "@reboot /bin/rpi-wifi.sh"; } | crontab -
 
 # Finish
