@@ -141,8 +141,14 @@ sudo bash -c 'cat > /etc/network/interfaces' << EOF
 source-directory /etc/network/interfaces.d
 
 auto lo
+auto eth0
 auto ap0
 auto wlan0
+
+iface eth0 inet static
+    address 192.168.50.10
+    netmask 255.255.255.0
+    gateway 192.168.50.1
 
 iface lo inet loopback
 
