@@ -161,6 +161,7 @@ EOF
 # Populate `/bin/start_wifi.sh`
 sudo bash -c 'cat > /bin/rpi-wifi.sh' << EOF
 echo 'Starting Wifi AP and client...'
+logger Restarting AP stack
 sleep 30
 sudo ifdown --force wlan0
 sudo ifdown --force ap0
@@ -191,7 +192,7 @@ sudo systemctl enable rpi-wifi.service
 #might not need the following due to the interfaces file
 sudo systemctl unmask hostapd.service
 sudo systemctl enable hostapd.service
-#crontab -l | { cat; echo "@reboot /bin/rpi-wifi.sh"; } | crontab -
+sudo crontab -u root crontab 
 
 # Finish
 echo "Wifi configuration is finished! Please reboot your Raspberry Pi to apply changes..."
