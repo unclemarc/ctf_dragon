@@ -1,0 +1,2 @@
+192.168.50.99 - - [20/Sep/2021:02:41:01 +0000] "GET / HTTP/1.1" 200 315 "-" "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0"
+192.168.50.99 - - [20/Sep/2021:02:41:01 +0000] "GET /favicon.ico HTTP/1.1" 404 503 "http://boris.unclemarc.local/" "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0"
