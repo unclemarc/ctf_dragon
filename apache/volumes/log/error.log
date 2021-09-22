@@ -8,3 +8,14 @@ AH00558: apache2: Could not reliably determine the server's fully qualified doma
 [Wed Sep 22 03:15:09.014595 2021] [core:warn] [pid 8:tid 3069529472] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
 [Wed Sep 22 03:15:09.024748 2021] [mpm_event:notice] [pid 8:tid 3069529472] AH00489: Apache/2.4.38 (Raspbian) configured -- resuming normal operations
 [Wed Sep 22 03:15:09.024998 2021] [core:notice] [pid 8:tid 3069529472] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Wed Sep 22 13:27:24.153172 2021] [core:warn] [pid 8:tid 3069648256] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Sep 22 13:27:24.186639 2021] [mpm_event:notice] [pid 8:tid 3069648256] AH00489: Apache/2.4.38 (Raspbian) configured -- resuming normal operations
+[Wed Sep 22 13:27:24.186892 2021] [core:notice] [pid 8:tid 3069648256] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Wed Sep 22 13:37:14.848307 2021] [mpm_event:notice] [pid 8:tid 3069648256] AH00491: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Wed Sep 22 13:40:04.062398 2021] [mpm_event:notice] [pid 8:tid 3069717888] AH00489: Apache/2.4.38 (Raspbian) configured -- resuming normal operations
+[Wed Sep 22 13:40:04.063840 2021] [core:notice] [pid 8:tid 3069717888] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Wed Sep 22 14:14:32.036490 2021] [mpm_prefork:notice] [pid 8] AH00163: Apache/2.4.38 (Raspbian) configured -- resuming normal operations
+[Wed Sep 22 14:14:32.037036 2021] [core:notice] [pid 8] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
