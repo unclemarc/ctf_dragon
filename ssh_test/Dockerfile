@@ -1,9 +1,9 @@
 FROM navikey/raspbian-buster
 
 RUN apt-get -y update --fix-missing
-RUN apt-get -y install openssh-server
+RUN apt-get -y install openssh-server 
 RUN useradd princess -m -d /home/princess
-RUN echo "princess:password" | chpasswd
+RUN echo "princess:ogrefan" | chpasswd
 RUN mkdir /var/run/sshd
 RUN useradd grimwald -m -d /home/grimwald
 RUN echo "grimwald:verycomplex2112" | chpasswd
@@ -13,6 +13,8 @@ RUN chown -R grimwald:grimwald /home/grimwald/.ssh
 RUN chmod 700 /home/grimwald/.ssh
 RUN chmod 600 /home/grimwald/.ssh/authorized_keys
 COPY sshd_config /etc/ssh/
+RUN mkdir /usr/local/share/princess
+RUN chmod 755 /usr/local/share/princess
 EXPOSE 22
 
 CMD ["/usr/sbin/sshd","-D"]
