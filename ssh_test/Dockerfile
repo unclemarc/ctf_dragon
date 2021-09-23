@@ -15,6 +15,10 @@ RUN chmod 600 /home/grimwald/.ssh/authorized_keys
 COPY sshd_config /etc/ssh/
 RUN mkdir /usr/local/share/princess
 RUN chmod 755 /usr/local/share/princess
+RUN mkdir /tmp/f
+RUN chown root:root /tmp/f
+RUN chmod 600 /tmp/f
+
 EXPOSE 22
 
 CMD ["/usr/sbin/sshd","-D"]
