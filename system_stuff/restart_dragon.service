@@ -1,0 +1,12 @@
+[Unit]
+Description=restart dragon containers
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=docker restart dragon-ssh
+ExecStart=docker restart dragon-apache
+
+[Install]
+WantedBy=multi-user.target
+
