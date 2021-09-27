@@ -4,6 +4,7 @@ After=multi-user.target
 
 [Service]
 Type=oneshot
+ExecStart=docker restart codeadmin
 ExecStart=docker restart dragon-ssh
 ExecStart=docker restart dragon-apache
 
