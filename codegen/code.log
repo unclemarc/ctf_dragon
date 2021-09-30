@@ -50,3 +50,6 @@
 /home/pi/lab/ctf_dragon/codegen/../ssh_test/volumes/princess/flag.txt ACCESS 
 /home/pi/lab/ctf_dragon/codegen/../ssh_test/volumes/princess/flag.txt ACCESS 
 /home/pi/lab/ctf_dragon/codegen/../apache/volumes/flag/f ACCESS 
+/home/pi/lab/ctf_dragon/codegen/../ssh_test/volumes/flag2/flag ACCESS 
+/home/pi/lab/ctf_dragon/codegen/../ssh_test/volumes/princess/flag.txt ACCESS 
+/home/pi/lab/ctf_dragon/codegen/../apache/volumes/flag/f ACCESS 
