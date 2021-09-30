@@ -7,7 +7,7 @@ import argparse
 con = None
 uniqueCode = None
 
-db = "./codes.db"
+db = "/home/pi/lab/ctf_dragon/codegen/codes.db"
 
 
 parser = argparse.ArgumentParser(description="Derby Code Generator")
