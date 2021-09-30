@@ -54,3 +54,27 @@ AH00558: apache2: Could not reliably determine the server's fully qualified doma
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.4. Set the 'ServerName' directive globally to suppress this message
 [Mon Sep 27 16:37:07.573035 2021] [mpm_prefork:notice] [pid 8] AH00163: Apache/2.4.38 (Raspbian) configured -- resuming normal operations
 [Mon Sep 27 16:37:07.573531 2021] [core:notice] [pid 8] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu Sep 30 12:31:49.085090 2021] [core:warn] [pid 8] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Sep 30 12:31:49.130315 2021] [mpm_prefork:notice] [pid 8] AH00163: Apache/2.4.38 (Raspbian) configured -- resuming normal operations
+[Thu Sep 30 12:31:49.130514 2021] [core:notice] [pid 8] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu Sep 30 12:51:34.930967 2021] [core:warn] [pid 8] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Sep 30 12:51:34.976313 2021] [mpm_prefork:notice] [pid 8] AH00163: Apache/2.4.38 (Raspbian) configured -- resuming normal operations
+[Thu Sep 30 12:51:34.976516 2021] [core:notice] [pid 8] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu Sep 30 13:01:02.852446 2021] [core:warn] [pid 8] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Sep 30 13:01:02.897264 2021] [mpm_prefork:notice] [pid 8] AH00163: Apache/2.4.38 (Raspbian) configured -- resuming normal operations
+[Thu Sep 30 13:01:02.897478 2021] [core:notice] [pid 8] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu Sep 30 13:26:49.777939 2021] [core:warn] [pid 8] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Sep 30 13:26:49.818724 2021] [mpm_prefork:notice] [pid 8] AH00163: Apache/2.4.38 (Raspbian) configured -- resuming normal operations
+[Thu Sep 30 13:26:49.818948 2021] [core:notice] [pid 8] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu Sep 30 13:43:50.511303 2021] [core:warn] [pid 8] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Sep 30 13:43:50.570335 2021] [mpm_prefork:notice] [pid 8] AH00163: Apache/2.4.38 (Raspbian) configured -- resuming normal operations
+[Thu Sep 30 13:43:50.570548 2021] [core:notice] [pid 8] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu Sep 30 13:46:45.719776 2021] [core:warn] [pid 8] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Sep 30 13:46:45.764921 2021] [mpm_prefork:notice] [pid 8] AH00163: Apache/2.4.38 (Raspbian) configured -- resuming normal operations
+[Thu Sep 30 13:46:45.765116 2021] [core:notice] [pid 8] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'

@@ -1,0 +1,12 @@
+[Unit]
+Description=start code regen scripts
+After=multi-user.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/codegen.sh
+
+
+[Install]
+WantedBy=multi-user.target
+

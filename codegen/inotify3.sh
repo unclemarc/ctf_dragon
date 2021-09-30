@@ -2,12 +2,12 @@
 #!/bin/bash
 
 WD="/home/pi/lab/ctf_dragon/codegen"
-GATE="6"
-CODEFILE="$WD/../apache/volumes/flag/f"
+GATE="8"
+CODEFILE="$WD/../ssh_test/volumes/flag2/flag"
 LOGFILE="$WD/code.log"
 
 while true
   do 
     $WD/codes-db.py -g $GATE  > $CODEFILE
-    inotifywait -e access $CODEFILE >> $LOGFILE 
+    inotifywait -q -e access $CODEFILE >> $LOGFILE 
 done &
