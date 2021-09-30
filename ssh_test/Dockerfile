@@ -8,6 +8,8 @@ RUN mkdir /var/run/sshd
 RUN useradd grimwald -m -d /home/grimwald
 RUN echo "grimwald:verycomplex2112" | chpasswd
 RUN mkdir /home/grimwald/.ssh
+COPY note_from_grimwald.txt /home/grimwald/
+RUN chmod 666 /home/grimwald/note_from_grimwald.txt
 COPY grimwald.pub /home/grimwald/.ssh/authorized_keys
 RUN chown -R grimwald:grimwald /home/grimwald/.ssh
 RUN chmod 700 /home/grimwald/.ssh
