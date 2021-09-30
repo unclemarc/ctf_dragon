@@ -20,6 +20,11 @@ RUN chmod 755 /usr/local/share/princess
 RUN mkdir /tmp/f
 RUN chown root:root /tmp/f
 RUN chmod 600 /tmp/f
+COPY playharp.sh /usr/local/bin
+RUN chown root:root /usr/local/bin/playharp.sh
+RUN chmod 700 /usr/local/bin/playharp.sh
+RUN echo "princess ALL=(root) /usr/local/bin/playharp.sh" > /etc/sudoers.d/princess
+
 
 EXPOSE 22
 
