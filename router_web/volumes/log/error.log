@@ -1,0 +1,3 @@
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Fri Oct 08 17:25:55.948814 2021] [mpm_event:notice] [pid 15:tid 3069508992] AH00489: Apache/2.4.38 (Raspbian) configured -- resuming normal operations
+[Fri Oct 08 17:25:55.953531 2021] [core:notice] [pid 15:tid 3069508992] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
