@@ -1,3 +1,14 @@
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
 [Fri Oct 08 17:25:55.948814 2021] [mpm_event:notice] [pid 15:tid 3069508992] AH00489: Apache/2.4.38 (Raspbian) configured -- resuming normal operations
 [Fri Oct 08 17:25:55.953531 2021] [core:notice] [pid 15:tid 3069508992] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sat Oct 09 16:07:29.795473 2021] [mpm_event:notice] [pid 15:tid 3069529472] AH00489: Apache/2.4.38 (Raspbian) configured -- resuming normal operations
+[Sat Oct 09 16:07:29.799442 2021] [core:notice] [pid 15:tid 3069529472] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sat Oct 09 16:09:38.340206 2021] [core:warn] [pid 8:tid 3070131584] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Oct 09 16:09:38.353037 2021] [mpm_event:notice] [pid 8:tid 3070131584] AH00489: Apache/2.4.38 (Raspbian) configured -- resuming normal operations
+[Sat Oct 09 16:09:38.353420 2021] [core:notice] [pid 8:tid 3070131584] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sat Oct 09 16:16:12.101098 2021] [core:warn] [pid 8:tid 3070041472] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Oct 09 16:16:12.112235 2021] [mpm_event:notice] [pid 8:tid 3070041472] AH00489: Apache/2.4.38 (Raspbian) configured -- resuming normal operations
+[Sat Oct 09 16:16:12.112527 2021] [core:notice] [pid 8:tid 3070041472] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
