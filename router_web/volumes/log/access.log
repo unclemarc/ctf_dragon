@@ -6,3 +6,8 @@
 192.168.42.150 - - [09/Oct/2021:16:22:55 +0000] "GET / HTTP/1.1" 200 793 "-" "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0"
 192.168.42.150 - - [09/Oct/2021:16:22:55 +0000] "GET /dragon_pi_top.jpg HTTP/1.1" 404 494 "http://192.168.42.1/" "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0"
 192.168.42.150 - - [09/Oct/2021:16:22:55 +0000] "GET /favicon.ico HTTP/1.1" 404 494 "http://192.168.42.1/" "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0"
+192.168.42.150 - - [09/Oct/2021:16:24:33 +0000] "GET / HTTP/1.1" 200 793 "-" "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0"
+192.168.42.150 - - [09/Oct/2021:16:24:33 +0000] "GET /dragon_pi_top.jpg HTTP/1.1" 200 233157 "http://192.168.42.1/" "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0"
+192.168.42.150 - - [09/Oct/2021:16:25:28 +0000] "GET / HTTP/1.1" 200 811 "-" "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0"
+192.168.42.150 - - [09/Oct/2021:16:25:28 +0000] "GET /dragon_pi_top.jpg HTTP/1.1" 200 233157 "http://192.168.42.1/" "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0"
+192.168.42.150 - - [09/Oct/2021:16:25:28 +0000] "GET /favicon.ico HTTP/1.1" 404 494 "http://192.168.42.1/" "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0"
