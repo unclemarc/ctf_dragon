@@ -1,4 +1,4 @@
-FROM navikey/raspbian-buster
+FROM debian:buster
 
 RUN apt-get -y update 
 RUN apt-get -y update --fix-missing 
