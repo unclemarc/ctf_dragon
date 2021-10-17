@@ -12,3 +12,4 @@ Need to copy codegen.sh into /usr/local/bin and copy the service files into /etc
 
 I've included get-docker.sh in the repo. This was provided by Docker to install the docker bits on the Pi. It'll do the trick.
 
+Note on the Access Point. I originally tried to do a thing where the WiFi could serve as both an interface for clients and a connection to the Internet. That never worked properly. In the end, I configured the AP using https://www.raspberrypi.com/documentation/computers/configuration.html#setting-up-a-routed-wireless-access-point - I also elected to NOT let clients use the Internet, so I didn't set up IP forwarding or masquerading. The idea is that the Pi is it's own little isolated WiFi network.
